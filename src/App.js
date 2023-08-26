@@ -3,8 +3,9 @@ import searchImages from "./api";
 
 let App = () => {
 
-  const handleSubmit = (term) => {
-    searchImages(term);
+  const handleSubmit = async (term) => {
+   const result = await searchImages(term);
+   console.log(result);
   };
 
   return <div>
