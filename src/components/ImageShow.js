@@ -1,5 +1,6 @@
-let ImageShow = () => {
-  return <div>ImageShow</div>;
+let ImageShow = ({ image }) => {
+
+  return <div>{image.id}</div>
 }
 
 export default ImageShow;
